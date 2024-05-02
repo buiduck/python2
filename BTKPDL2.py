@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 # Đọc dữ liệu từ file
 red_wine_data = pd.read_csv("winequality-red.csv")
 white_wine_data = pd.read_csv("winequality-white.csv")
-
+""""""
 # Tạo vòng lặp để phân chia và xuất tập huấn luyện và tập kiểm tra ba lần
 for i in range(3):
     # Phân chia dữ liệu cho rượu đỏ
@@ -20,7 +20,7 @@ for i in range(3):
     white_test.to_csv(f"white_wine_test_{i}.csv", index=False)
 
 #Kmeans Cau 2
-"""
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.cluster import KMeans
@@ -140,6 +140,6 @@ print("Precision:", avg_precision_white)
 print("Recall:", avg_recall_white)
 print("F1 Score:", avg_f1_white)
 
-"""
+
 
 
